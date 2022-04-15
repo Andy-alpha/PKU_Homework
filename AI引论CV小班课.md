@@ -1,4 +1,4 @@
-# 计算机视觉小班（Computer Vision） 刘家瑛
+ 计算机视觉小班（Computer Vision） 刘家瑛
 
 Email: liujiaying@pku.edu.cn
 [Group](https://www.wict.pku.edu.cn/struct/ "小组")
@@ -95,19 +95,22 @@ print(a_) # [[1],'2',3]
 
 1D returns a vector while 2D returns a matrix.
 
-视锥细胞：${\color{Red}c}{\color{OliveGreen}on}{\color{Blue}es}$/视感细胞：rods
+视锥细胞：<img src="https://latex.codecogs.com/svg.image?{\color{Red}c}{\color{OliveGreen}on}{\color{Blue}es}" title="https://latex.codecogs.com/svg.image?{\color{Red}c}{\color{OliveGreen}on}{\color{Blue}es}" />
+视感细胞：rods
 
 <font size=3 color=D2691E>列表:</font>
 
-<font face="verdana" color="green">This is some text!</font>
+<img src="https://latex.codecogs.com/svg.image?{\color{Green}&space;This\&space;is\&space;some\&space;text!}" title="https://latex.codecogs.com/svg.image?{\color{Green} This\ is\ some\ text!}" />
 
 <font face="宋体">我是宋体字</font>
 
 ## Color Space HSV
 
-**H:**Hue
-**S:**Saturation
-**V:**Value
+**H**: Hue
+
+**S**: Saturation
+
+**V**: Value
 
 # §2 Python图像进阶与全局图像变换
 
@@ -130,15 +133,15 @@ import numpy as np
 
 - Gamma Correction
 
-	$s=c\cdot r^\gamma$
+	<img src="https://latex.codecogs.com/svg.image?s=c\cdot&space;r^\gamma" title="https://latex.codecogs.com/svg.image?s=c\cdot r^\gamma" />
 
 - Negative Image
 
-	$s=L-1-r$
+	<img src="https://latex.codecogs.com/svg.image?s=L-1-r" title="https://latex.codecogs.com/svg.image?s=L-1-r" />
 
 - Log Transform
 
-	$s=c\log(1+r)$
+	<img src="https://latex.codecogs.com/svg.image?s=c\log(1&plus;r)" title="https://latex.codecogs.com/svg.image?s=c\log(1+r)" />
 
 ## Local Transformation
 
@@ -259,39 +262,34 @@ Difference of Gaussian: DoG
 
 安装Anaconda和PyTorch
 
+# Motion & Optical Flow
+
+## Three Factors in Computer Vision
+
+\- Light
+\- Object
+\- Camera
+
+## Varying Either of them causes motion
+
+## Optical Flow（光流）
+
+# §4 模式识别与机器学习简介
+
+## 感知机
+
+<img src="https://latex.codecogs.com/svg.image?\begin{array}{lcl}f(x)=\mathrm&space;{sgn}(\mathbf{w^T&space;x}&plus;b)\\y_i(\mathbf{w^T&space;x}_i&plus;b)\\b\to&space;b&plus;\eta&space;y_i\\\mathbf&space;w&space;\to&space;\mathbf&space;w&plus;\eta&space;y_i&space;\mathbf&space;x_i\end{array}" title="https://latex.codecogs.com/svg.image?\begin{array}{lcl}f(x)=\mathrm {sgn}(\mathbf{w^T x}+b)\\y_i(\mathbf{w^T x}_i+b)\\b\to b+\eta y_i\\\mathbf w \to \mathbf w+\eta y_i \mathbf x_i\end{array}" />
+
+## 支持向量机（SVM）
+
+Lagrange乘子法
+
+## Bag of Feature
 
 
 
+图像识别任务的基本步骤
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. 准备数据集（可能包括增强和预处理）
+2. 提取特征（可能需要对特征进行向量编码）
+3. 选择、训练分类器对特征向量进行分类
