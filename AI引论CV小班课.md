@@ -286,10 +286,41 @@ Lagrange乘子法
 
 ## Bag of Feature
 
-
-
 图像识别任务的基本步骤
 
 1. 准备数据集（可能包括增强和预处理）
 2. 提取特征（可能需要对特征进行向量编码）
 3. 选择、训练分类器对特征向量进行分类
+
+# Objection Detection
+
+## License Plate Detection & Recognition
+
+**Task**: find and recognize license plates in images
+
+## Types of specific categories
+
+Detection of specific categories
+
+Detection of specific instance
+
+## Recognition Problems related to Detection
+
+## Semantic Segmentation Idea
+
+Fully Conventional
+
+## Fast R-CNN
+
+先做一次CNN，再来一次
+
+# §5 基础网络结构：卷积层
+
+```python
+import torch
+torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride=1, padding=0,dilation=1, groups=1, bias=True, padding_mode='zeros')
+```
+
+
+
+现代人工神经网络
